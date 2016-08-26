@@ -1,104 +1,104 @@
-- title: Quick Start
+- title: Quick Start / 快速入门
   items:
   - id: getting-started
-    title: Getting Started
+    title: Getting Started <br/><i class="icon-circle-arrow-right"></i> 快速开始
   - id: tutorial
-    title: Tutorial
+    title: Tutorial <br/><i class="icon-circle-arrow-right"></i> 教程
   - id: thinking-in-react
-    title: Thinking in React
-- title: Community Resources
+    title: Thinking in React <br/><i class="icon-circle-arrow-right"></i> 深入理解React
+- title: Community Resources - - - - 社区资源
   items:
   - id: conferences
-    title: Conferences
+    title: Conferences <br/><i class="icon-circle-arrow-right"></i> 会议
   - id: videos
-    title: Videos
+    title: Videos <br/><i class="icon-circle-arrow-right"></i> 视频
   - id: complementary-tools
-    title: Complementary Tools
+    title: Complementary Tools <br/><i class="icon-circle-arrow-right"></i> 其余工具
     href: https://github.com/facebook/react/wiki/Complementary-Tools
   - id: examples
-    title: Examples
+    title: Examples <br/><i class="icon-circle-arrow-right"></i> 范例
     href: https://github.com/facebook/react/wiki/Examples
-- title: Guides
+- title: Guides / 指南
   items:
   - id: why-react
-    title: Why React?
+    title: Why React? <br/><i class="icon-circle-arrow-right"></i> 为什么使用 React?
   - id: displaying-data
-    title: Displaying Data
+    title: Displaying Data <br/><i class="icon-circle-arrow-right"></i> 数据呈现
     subitems:
     - id: jsx-in-depth
-      title: JSX in Depth
+      title: JSX in Depth <br/><i class="icon-circle-arrow-right"></i> 深入理解JSX
     - id: jsx-spread
-      title: JSX Spread Attributes
+      title: JSX Spread Attributes <br/><i class="icon-circle-arrow-right"></i> JSX的延展属性
     - id: jsx-gotchas
-      title: JSX Gotchas
+      title: JSX Gotchas / JSX的陷阱
   - id: interactivity-and-dynamic-uis
-    title: Interactivity and Dynamic UIs
+    title: Interactivity and Dynamic UIs <br/><i class="icon-circle-arrow-right"></i> 富交互性的动态用户界面
   - id: multiple-components
-    title: Multiple Components
+    title: Multiple Components <br/><i class="icon-circle-arrow-right"></i> 复合组件
   - id: reusable-components
-    title: Reusable Components
+    title: Reusable Components <br/><i class="icon-circle-arrow-right"></i> 可复用组件
   - id: transferring-props
-    title: Transferring Props
+    title: Transferring Props <br/><i class="icon-circle-arrow-right"></i> 传递 Props
   - id: forms
-    title: Forms
+    title: Forms <br/><i class="icon-circle-arrow-right"></i> 表单组件
   - id: working-with-the-browser
-    title: Working With the Browser
+    title: Working With the Browser <br/><i class="icon-circle-arrow-right"></i> 浏览器中的工作原理
     subitems:
     - id: more-about-refs
-      title: Refs to Components
+      title: Refs to Components <br/><i class="icon-circle-arrow-right"></i> 关于Refs的更多内容
   - id: tooling-integration
-    title: Tooling Integration
+    title: Tooling Integration <br/><i class="icon-circle-arrow-right"></i> 整合工具
     subitems:
     - id: language-tooling
-      title: Language Tooling
+      title: Language Tooling <br/><i class="icon-circle-arrow-right"></i> 语言工具
     - id: package-management
-      title: Package Management
+      title: Package Management <br/><i class="icon-circle-arrow-right"></i> 包管理器
     - id: environments
-      title: Server-side Environments
+      title: Server-side Environments <br/><i class="icon-circle-arrow-right"></i> 服务器端环境
   - id: addons
-    title: Add-Ons
+    title: Add-Ons <br/><i class="icon-circle-arrow-right"></i> 插件
     subitems:
     - id: animation
-      title: Animation
+      title: Animation <br/><i class="icon-circle-arrow-right"></i> 动画
     - id: two-way-binding-helpers
-      title: Two-Way Binding Helpers
+      title: Two-Way Binding Helpers <br/><i class="icon-circle-arrow-right"></i> 双向绑定
     - id: test-utils
-      title: Test Utilities
+      title: Test Utilities <br/><i class="icon-circle-arrow-right"></i> 测试工具集
     - id: clone-with-props
-      title: Cloning Elements
+      title: Cloning Elements <br/><i class="icon-circle-arrow-right"></i> 克隆组件
     - id: create-fragment
-      title: Keyed Fragments
+      title: Keyed Fragments <br/><i class="icon-circle-arrow-right"></i> 键控片段
     - id: update
-      title: Immutability Helpers
+      title: Immutability Helpers <br/><i class="icon-circle-arrow-right"></i> 不变性的帮手
     - id: pure-render-mixin
-      title: PureRenderMixin
+      title: PureRenderMixin <br/><i class="icon-circle-arrow-right"></i> PureRenderMixin
     - id: perf
-      title: Performance Tools
+      title: Performance Tools <br/><i class="icon-circle-arrow-right"></i> 性能分析工具
     - id: shallow-compare
-      title: Shallow Compare
+      title: Shallow Compare <br/><i class="icon-circle-arrow-right"></i> 浅的比较
   - id: advanced-performance
-    title: Advanced Performance
+    title: Advanced Performance <br/><i class="icon-circle-arrow-right"></i> 高阶性能
   - id: context
-    title: Context
-- title: Reference
+    title: Context <br/><i class="icon-circle-arrow-right"></i> 语境上下文
+- title: Reference / 参考
   items:
   - id: top-level-api
-    title: Top-Level API
+    title: Top-Level API <br/><i class="icon-circle-arrow-right"></i> 顶层 API
   - id: component-api
-    title: Component API
+    title: Component API <br/><i class="icon-circle-arrow-right"></i> 组件 API
   - id: component-specs
-    title: Component Specs and Lifecycle
+    title: Component Specs and Lifecycle <br/><i class="icon-circle-arrow-right"></i> 组件的详细说明和生命周期
   - id: tags-and-attributes
-    title: Supported Tags and Attributes
+    title: Supported Tags and Attributes <br/><i class="icon-circle-arrow-right"></i> 标签和属性支持
   - id: events
-    title: Event System
+    title: Event System <br/><i class="icon-circle-arrow-right"></i> 事件系统
   - id: dom-differences
-    title: DOM Differences
+    title: DOM Differences <br/><i class="icon-circle-arrow-right"></i> 与 DOM 的差异
   - id: special-non-dom-attributes
-    title: Special Non-DOM Attributes
+    title: Special Non-DOM Attributes <br/><i class="icon-circle-arrow-right"></i> 特殊的非 DOM 属性
   - id: reconciliation
-    title: Reconciliation
+    title: Reconciliation <br/><i class="icon-circle-arrow-right"></i> 和解
   - id: webcomponents
-    title: Web Components
+    title: Web Components <br/><i class="icon-circle-arrow-right"></i> Web组件
   - id: glossary
-    title: React (Virtual) DOM Terminology
+    title: React (Virtual) DOM Terminology <br/><i class="icon-circle-arrow-right"></i> React（虚拟）DOM 术语
