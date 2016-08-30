@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo3 - 富交互性的动态用户界面</title>
+    <script src="./react-15.3.1/build/react.min.js"></script>
+    <script src="./react-15.3.1/build/react-dom.min.js"></script>
+    <!-- <script src="./react-0.14.8/build/JSXTransformer-0.14.8.js"></script> -->
+    <script src="./browser-5.8.24.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+
+    <script type="text/babel">
+
+      // ** 在这里替换成你的代码 **
+
+      class LikeButton extends React.Component {
+		  constructor() {
+			super();
+			this.state = {
+			  liked: false
+			};
+			this.handleClick = this.handleClick.bind(this);
+		  }
+		  handleClick() {
+			this.setState({liked: !this.state.liked});
+		  }
+		  render() {
+			const text = this.state.liked ? 'liked' : 'haven\'t liked';
+			return (
+			  <div onClick={this.handleClick}>
+				You {text} this. Click to toggle.
+			  </div>
+			);
+		  }
+		}
+
+		ReactDOM.render(
+		  <LikeButton />,
+		  document.getElementById('example')
+		);
+
+    </script>
+  </body>
+</html>

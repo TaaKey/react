@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello React</title>
+    <script src="./react-15.3.1/build/react.min.js"></script>
+    <script src="./react-15.3.1/build/react-dom.min.js"></script>
+    <!-- <script src="./react-0.14.8/build/JSXTransformer-0.14.8.js"></script> -->
+    <script src="./browser-5.8.24.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+
+    <script type="text/babel">
+
+      // ** 在这里替换成你的代码 **
+
+      var HelloWorld = React.createClass({
+        render: function() {
+            return (
+            
+            <p>
+            <div>{'First \u00b7 Second'}</div>
+            <div>{'First ' + String.fromCharCode(183) + ' Second'}</div>
+            <div>{['First ', <span>&middot;</span>, ' Second']}</div>
+            <div dangerouslySetInnerHTML={{__html: 'First &middot; Second'}} />
+                Hello, <input type="text" placeholder="Your name here" />!
+                It is {this.props.date.toTimeString()}
+            </p>
+            );
+        }
+        });
+
+        setInterval(function() {
+        ReactDOM.render(
+            <HelloWorld date={new Date()} />,
+            document.getElementById('example')
+        );
+        }, 500);
+
+    </script>
+  </body>
+</html>

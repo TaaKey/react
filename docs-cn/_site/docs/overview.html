@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Overview | React</title>
+  <meta name="viewport" content="width=device-width">
+  <meta property="og:title" content="Overview | React">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://facebook.github.io/react/docs/overview.html">
+  <meta property="og:image" content="https://facebook.github.io/react/img/logo_og.png">
+  <meta property="og:description" content="A JavaScript library for building user interfaces">
+  <meta property="fb:app_id" content="623268441017527">
+
+  <link rel="shortcut icon" href="/react/favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="React" href="https://127.0.0.1/react/feed.xml">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+  <link rel="stylesheet" href="/react/css/syntax.css">
+  <link rel="stylesheet" href="/react/css/codemirror.css">
+  <link rel="stylesheet" href="/react/css/react.css">
+
+  <!-- Taakey: add fon-awesome -->
+  <!-- 
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <script src="//use.typekit.net/vqa1hcx.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <!--[if lte IE 8]>
+  <script src="/react/js/html5shiv.min.js"></script>
+  <script src="/react/js/es5-shim.min.js"></script>
+  <script src="/react/js/es5-sham.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script src="/react/js/codemirror.js"></script>
+  <script src="/react/js/javascript.js"></script>
+  <script src="/react/js/xml.js"></script>
+  <script src="/react/js/jsx.js"></script>
+  <script src="/react/js/react.js"></script>
+  <script src="/react/js/react-dom.js"></script>
+  <script src="/react/js/babel-browser.min.js"></script>
+  <script src="/react/js/live_editor.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="nav-main">
+      <div class="wrap">
+        <a class="nav-home" href="/react/index.html">
+          <img class="nav-logo" src="/react/img/logo.svg" width="36" height="36">
+          React
+        </a>
+        <ul class="nav-site nav-site-internal">
+          <li><a href="/react/docs/getting-started.html" class="active">Docs/文档</a></li>
+          <li><a href="/react/support.html">Support/支持</a></li>
+          <li><a href="/react/downloads.html">Download/下载</a></li>
+          <li><a href="/react/blog/">Blog/博客</a></li>
+          <li>
+            <input id="algolia-doc-search" type="text" placeholder="Search docs..." />
+          </li>
+        </ul>
+
+        <ul class="nav-site nav-site-external">
+          <li><a href="https://github.com/facebook/react">GitHub</a></li>
+          <li><a href="https://facebook.github.io/react-native/">React Native</a></li>
+        </ul>
+      </div>
+    </div>
+
+    
+
+    <section class="content wrap documentationContent">
+  <div class="nav-docs">
+  <!-- Docs Nav -->
+  
+    <div class="nav-docs-section">
+      <h3>Quick Start / 快速入门</h3>
+      <ul>
+        
+          <li>
+            <a href="/react/docs/getting-started.html">Getting Started <br/><i class="icon-circle-arrow-right"></i> 快速开始</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/tutorial.html">Tutorial <br/><i class="icon-circle-arrow-right"></i> 教程</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/thinking-in-react.html">Thinking in React <br/><i class="icon-circle-arrow-right"></i> 深入理解React</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>Community Resources - - - - 社区资源</h3>
+      <ul>
+        
+          <li>
+            <a href="/react/docs/conferences.html">Conferences <br/><i class="icon-circle-arrow-right"></i> 会议</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/videos.html">Videos <br/><i class="icon-circle-arrow-right"></i> 视频</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://github.com/facebook/react/wiki/Complementary-Tools" class="external">Complementary Tools <br/><i class="icon-circle-arrow-right"></i> 其余工具</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://github.com/facebook/react/wiki/Examples" class="external">Examples <br/><i class="icon-circle-arrow-right"></i> 范例</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>Guides / 指南</h3>
+      <ul>
+        
+          <li>
+            <a href="/react/docs/why-react.html">Why React? <br/><i class="icon-circle-arrow-right"></i> 为什么使用 React?</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/displaying-data.html">Displaying Data <br/><i class="icon-circle-arrow-right"></i> 数据呈现</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="/react/docs/jsx-in-depth.html">JSX in Depth <br/><i class="icon-circle-arrow-right"></i> 深入理解JSX</a>
+                  </li>
+                
+                  <li>
+                    <a href="/react/docs/jsx-spread.html">JSX Spread Attributes <br/><i class="icon-circle-arrow-right"></i> JSX的延展属性</a>
+                  </li>
+                
+                  <li>
+                    <a href="/react/docs/jsx-gotchas.html">JSX Gotchas / JSX的陷阱</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/interactivity-and-dynamic-uis.html">Interactivity and Dynamic UIs <br/><i class="icon-circle-arrow-right"></i> 富交互性的动态用户界面</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/multiple-components.html">Multiple Components <br/><i class="icon-circle-arrow-right"></i> 复合组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/reusable-components.html">Reusable Components <br/><i class="icon-circle-arrow-right"></i> 可复用组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/transferring-props.html">Transferring Props <br/><i class="icon-circle-arrow-right"></i> 传递 Props</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/forms.html">Forms <br/><i class="icon-circle-arrow-right"></i> 表单组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/working-with-the-browser.html">Working With the Browser <br/><i class="icon-circle-arrow-right"></i> 浏览器中的工作原理</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="/react/docs/more-about-refs.html">Refs to Components <br/><i class="icon-circle-arrow-right"></i> 关于Refs的更多内容</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/tooling-integration.html">Tooling Integration <br/><i class="icon-circle-arrow-right"></i> 整合工具</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="/react/docs/language-tooling.html">Language Tooling <br/><i class="icon-circle-arrow-right"></i> 语言工具</a>
+                  </li>
+                
+                  <li>
+                    <a href="/react/docs/package-management.html">Package Management <br/><i class="icon-circle-arrow-right"></i> 包管理器</a>
+                  </li>
+                
+                  <li>
+                    <a href="/react/docs/environments.html">Server-side Environments <br/><i class="icon-circle-arrow-right"></i> 服务器端环境</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/addons.html">Add-Ons <br/><i class="icon-circle-arrow-right"></i> 插件</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="/react/docs/animation.html">Animation <br/><i class="icon-circle-arrow-right"></i> 动画</a>
+                  </li>
+                
+                  <li>
+                    <a href="/react/docs/two-way-binding-helpers.html">Two-Way Binding Helpers <br/><i class="icon-circle-arrow-right"></i> 双向绑定</a>
+                  </li>
+                
+                  <li>
+                    <a href="/react/docs/test-utils.html">Test Utilities <br/><i class="icon-circle-arrow-right"></i> 测试工具集</a>
+                  </li>
+                
+                  <li>
+                    <a href="/react/docs/clone-with-props.html">Cloning Elements <br/><i class="icon-circle-arrow-right"></i> 克隆组件</a>
+                  </li>
+                
+                  <li>
+                    <a href="/react/docs/create-fragment.html">Keyed Fragments <br/><i class="icon-circle-arrow-right"></i> 键控片段</a>
+                  </li>
+                
+                  <li>
+                    <a href="/react/docs/update.html">Immutability Helpers <br/><i class="icon-circle-arrow-right"></i> 不变性的帮手</a>
+                  </li>
+                
+                  <li>
+                    <a href="/react/docs/pure-render-mixin.html">PureRenderMixin <br/><i class="icon-circle-arrow-right"></i> PureRenderMixin</a>
+                  </li>
+                
+                  <li>
+                    <a href="/react/docs/perf.html">Performance Tools <br/><i class="icon-circle-arrow-right"></i> 性能分析工具</a>
+                  </li>
+                
+                  <li>
+                    <a href="/react/docs/shallow-compare.html">Shallow Compare <br/><i class="icon-circle-arrow-right"></i> 浅的比较</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/advanced-performance.html">Advanced Performance <br/><i class="icon-circle-arrow-right"></i> 高阶性能</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/context.html">Context <br/><i class="icon-circle-arrow-right"></i> 语境上下文</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>Reference / 参考</h3>
+      <ul>
+        
+          <li>
+            <a href="/react/docs/top-level-api.html">Top-Level API <br/><i class="icon-circle-arrow-right"></i> 顶层 API</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/component-api.html">Component API <br/><i class="icon-circle-arrow-right"></i> 组件 API</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/component-specs.html">Component Specs and Lifecycle <br/><i class="icon-circle-arrow-right"></i> 组件的详细说明和生命周期</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/tags-and-attributes.html">Supported Tags and Attributes <br/><i class="icon-circle-arrow-right"></i> 标签和属性支持</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/events.html">Event System <br/><i class="icon-circle-arrow-right"></i> 事件系统</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/dom-differences.html">DOM Differences <br/><i class="icon-circle-arrow-right"></i> 与 DOM 的差异</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/special-non-dom-attributes.html">Special Non-DOM Attributes <br/><i class="icon-circle-arrow-right"></i> 特殊的非 DOM 属性</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/reconciliation.html">Reconciliation <br/><i class="icon-circle-arrow-right"></i> 和解</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/webcomponents.html">Web Components <br/><i class="icon-circle-arrow-right"></i> Web组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/glossary.html">React (Virtual) DOM Terminology <br/><i class="icon-circle-arrow-right"></i> React（虚拟）DOM 术语</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>Flux</h3>
+      <ul>
+        
+          <li>
+            <a href="/react/docs/flux-overview.html">Flux Overview <br/><i class="icon-circle-arrow-right"></i>  Flux概述</a>
+            
+          </li>
+        
+          <li>
+            <a href="/react/docs/flux-todo-list.html">Flux TodoMVC Tutorial <br/><i class="icon-circle-arrow-right"></i> Flux的TodoMVC教程</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <!-- Tips Nav -->
+  
+    <div class="nav-docs-section">
+      <h3>Tips / 技巧</h3>
+      <ul>
+        
+          <li>
+            <a href="/react/tips/introduction.html">Introduction <br/><i class="icon-circle-arrow-right"></i> 简介</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/inline-styles.html">Inline Styles <br/><i class="icon-circle-arrow-right"></i> 内部样式</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/if-else-in-JSX.html">If-Else in JSX <br/><i class="icon-circle-arrow-right"></i> JSX 的 If-Else</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/self-closing-tag.html">Self-Closing Tag <br/><i class="icon-circle-arrow-right"></i> 自闭合标签</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/maximum-number-of-jsx-root-nodes.html">Maximum Number of JSX Root Nodes <br/><i class="icon-circle-arrow-right"></i> JSF根节点最大数目</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/style-props-value-px.html">Shorthand for Specifying Pixel Values in style props <br/><i class="icon-circle-arrow-right"></i> 像素PX</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/children-props-type.html">Type of the Children props <br/><i class="icon-circle-arrow-right"></i> 子组件属性的类型</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/controlled-input-null-value.html">Value of null for Controlled Input <br/><i class="icon-circle-arrow-right"></i> input控件的null值</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/componentWillReceiveProps-not-triggered-after-mounting.html">componentWillReceiveProps Not Triggered After Mounting <br/><i class="icon-circle-arrow-right"></i> Mounting后componentWillReceiveProps未自动触发</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/props-in-getInitialState-as-anti-pattern.html">Props in getInitialState Is an Anti-Pattern <br/><i class="icon-circle-arrow-right"></i> 反模式：在getInitialState中使用Props</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/dom-event-listeners.html">DOM Event Listeners in a Component <br/><i class="icon-circle-arrow-right"></i> 组件中的DOM事件监听</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/initial-ajax.html">Load Initial Data via AJAX <br/><i class="icon-circle-arrow-right"></i> 使用AJAX加载初始化数据</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/false-in-jsx.html">False in JSX <br/><i class="icon-circle-arrow-right"></i> 在JSX中的False</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/communicate-between-components.html">Communicate Between Components <br/><i class="icon-circle-arrow-right"></i> 组件间的通信</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/expose-component-functions.html">Expose Component Functions <br/><i class="icon-circle-arrow-right"></i> 暴露组件功能</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/children-undefined.html">this.props.children undefined <br/><i class="icon-circle-arrow-right"></i> this.props.children未定义</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/use-react-with-other-libraries.html">Use React with Other Libraries <br/><i class="icon-circle-arrow-right"></i> 其它类库</a>
+          </li>
+        
+          <li>
+            <a href="/react/tips/dangerously-set-inner-html.html">Dangerously Set innerHTML <br/><i class="icon-circle-arrow-right"></i> 设置innerHTML很危险</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <!-- Contributing Nav -->
+  
+    <div class="nav-docs-section">
+      <h3>Contributing</h3>
+      <ul>
+        
+          <li>
+            <a href="/react/contributing/design-principles.html">Design Principles</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+</div>
+
+
+  <div class="inner-content">
+    <a class="edit-page-link" href="https://github.com/facebook/react/tree/master/docs/docs/flux-new-overview.md" target="_blank">Edit on GitHub</a>
+    <h1>
+      Overview
+    </h1>
+    <div class="subHeader"></div>
+
+    <p>Flux is the application architecture that Facebook uses for building client-side web applications.  It complements React&#39;s composable view components by utilizing a unidirectional data flow.  It&#39;s more of a pattern rather than a formal framework, and you can start using Flux immediately without a lot of new code.</p>
+
+<figure class="video-container disassociated-with-next-sibling">
+  <iframe src="//www.youtube.com/embed/nYkdrAPrdcw?list=PLb0IAmt7-GS188xDYE-u1ShQmFFGbrk0v&start=621" frameborder="0" allowfullscreen></iframe>
+</figure>
+
+<p>Flux applications have three major parts: the dispatcher, the stores, and the views (React components).  These should not be confused with Model-View-Controller.  Controllers do exist in a Flux application, but they are controller-views — views often found at the top of the hierarchy that retrieve data from the stores and pass this data down to their children.  Additionally, action creators — dispatcher helper methods — are used to support a semantic API that describes all changes that are possible in the application.  It can be useful to think of them as a fourth part of the Flux update cycle.</p>
+
+<p>Flux eschews MVC in favor of a unidirectional data flow. When a user interacts with a React view, the view propagates an action through a central dispatcher, to the various stores that hold the application&#39;s data and business logic, which updates all of the views that are affected. This works especially well with React&#39;s declarative programming style, which allows the store to send updates without specifying how to transition views between states.</p>
+
+<p>We originally set out to deal correctly with derived data: for example, we wanted to show an unread count for message threads while another view showed a list of threads, with the unread ones highlighted. This was difficult to handle with MVC — marking a single thread as read would update the thread model, and then also need to update the unread count model.  These dependencies and cascading updates often occur in a large MVC application, leading to a tangled weave of data flow and unpredictable results.</p>
+
+<p>Control is inverted with stores: the stores accept updates and reconcile them as appropriate, rather than depending on something external to update its data in a consistent way. Nothing outside the store has any insight into how it manages the data for its domain, helping to keep a clear separation of concerns. Stores have no direct setter methods like <code>setAsRead()</code>, but instead have only a single way of getting new data into their self-contained world — the callback they register with the dispatcher.</p>
+<h2><a class="anchor" name="structure-and-data-flow"></a>Structure and Data Flow <a class="hash-link" href="#structure-and-data-flow">#</a></h2>
+<p class="associated-with-next-sibling">
+Data in a Flux application flows in a single direction:
+</p>
+
+<figure class="diagram associated-with-next-sibling">
+  <img src="/flux/img/flux-simple-f8-diagram-1300w.png" alt="unidirectional data flow in Flux" />
+</figure>
+
+<p>A unidirectional data flow is central to the Flux pattern, and the above diagram should be <strong>the primary mental model for the Flux programmer</strong>. The dispatcher, stores and views are independent nodes with distinct inputs and outputs. The actions are simple objects containing the new data and an identifying <em>type</em> property.  </p>
+
+<p class="associated-with-next-sibling">
+The views may cause a new action to be propagated through the system in response to user interactions:
+</p>
+
+<figure class="diagram">
+  <img src="/flux/img/flux-simple-f8-diagram-with-client-action-1300w.png" alt="data flow in Flux with data originating from user interactions" />
+</figure>
+
+<p class="associated-with-next-sibling">
+All data flows through the dispatcher as a central hub.  Actions are provided to the dispatcher in an <em>action creator</em> method, and most often originate from user interactions with the views.  The dispatcher then invokes the callbacks that the stores have registered with it, dispatching actions to all stores.  Within their registered callbacks, stores respond to whichever actions are relevant to the state they maintain.  The stores then emit a <em>change</em> event to alert the controller-views that a change to the data layer has occurred.  Controller-views listen for these events and retrieve data from the stores in an event handler. The controller-views call their own <code>setState()</code> method, causing a re-rendering of themselves and all of their descendants in the component tree.
+</p>
+
+<figure class="diagram">
+  <img src="/flux/img/flux-simple-f8-diagram-explained-1300w.png" alt="varying transports between each step of the Flux data flow" />
+</figure>
+
+<p>This structure allows us to reason easily about our application in a way that is reminiscent of <em>functional reactive programming</em>, or more specifically <em>data-flow programming</em> or <em>flow-based programming</em>, where data flows through the application in a single direction — there are no two-way bindings. Application state is maintained only in the stores, allowing the different parts of the application to remain highly decoupled. Where dependencies do occur between stores, they are kept in a strict hierarchy, with synchronous updates managed by the dispatcher.</p>
+
+<p>We found that two-way data bindings led to cascading updates, where changing one object led to another object changing, which could also trigger more updates. As applications grew, these cascading updates made it very difficult to predict what would change as the result of one user interaction. When updates can only change data within a single round, the system as a whole becomes more predictable.</p>
+
+<p>Let&#39;s look at the various parts of Flux up close. A good place to start is the dispatcher.</p>
+<h3><a class="anchor" name="a-single-dispatcher"></a>A Single Dispatcher <a class="hash-link" href="#a-single-dispatcher">#</a></h3>
+<p>The dispatcher is the central hub that manages all data flow in a Flux application. It is essentially a registry of callbacks into the stores and has no real intelligence of its own — it is a simple mechanism for distributing the actions to the stores. Each store registers itself and provides a callback. When an action creator provides the dispatcher with a new action, all stores in the application receive the action via the callbacks in the registry.</p>
+
+<p>As an application grows, the dispatcher becomes more vital, as it can be used to manage dependencies between the stores by invoking the registered callbacks in a specific order.  Stores can declaratively wait for other stores to finish updating, and then update themselves accordingly.</p>
+
+<p>The same dispatcher that Facebook uses in production is available through <a href="https://www.npmjs.com/package/flux">npm</a>, <a href="http://bower.io/">Bower</a>, or <a href="https://github.com/facebook/flux">GitHub</a>.</p>
+<h3><a class="anchor" name="stores"></a>Stores <a class="hash-link" href="#stores">#</a></h3>
+<p>Stores contain the application state and logic. Their role is somewhat similar to a model in a traditional MVC, but they manage the state of many objects — they do not represent a single record of data like ORM models do. Nor are they the same as Backbone&#39;s collections. More than simply managing a collection of ORM-style objects, stores manage the application state for a particular <strong>domain</strong> within the application.</p>
+
+<p>For example, Facebook&#39;s <a href="https://facebook.com/lookback/edit">Lookback Video Editor</a> utilized a TimeStore that kept track of the playback time position and the playback state. On the other hand, the same application&#39;s ImageStore kept track of a collection of images.  The TodoStore in our <a href="https://github.com/facebook/flux/tree/master/examples/flux-todomvc/">TodoMVC example</a> is similar in that it manages a collection of to-do items.  A store exhibits characteristics of both a collection of models and a singleton model of a logical domain.</p>
+
+<p>As mentioned above, a store registers itself with the dispatcher and provides it with a callback. This callback receives the action as a parameter. Within the store&#39;s registered callback, a switch statement based on the action&#39;s type is used to interpret the action and to provide the proper hooks into the store&#39;s internal methods. This allows an action to result in an update to the state of the store, via the dispatcher. After the stores are updated, they broadcast an event declaring that their state has changed, so the views may query the new state and update themselves.</p>
+<h3><a class="anchor" name="views-and-controller-views"></a>Views and Controller-Views <a class="hash-link" href="#views-and-controller-views">#</a></h3>
+<p>React provides the kind of composable and freely re-renderable views we need for the view layer. Close to the top of the nested view hierarchy, a special kind of view listens for events that are broadcast by the stores that it depends on. We call this a controller-view, as it provides the glue code to get the data from the stores and to pass this data down the chain of its descendants. We might have one of these controller-views governing any significant section of the page.</p>
+
+<p>When it receives the event from the store, it first requests the new data it needs via the stores&#39; public getter methods. It then calls its own <code>setState()</code> or <code>forceUpdate()</code> methods, causing its <code>render()</code> method and the <code>render()</code> method of all its descendants to run.</p>
+
+<p>We often pass the entire state of the store down the chain of views in a single object, allowing different descendants to use what they need. In addition to keeping the controller-like behavior at the top of the hierarchy, and thus keeping our descendant views as functionally pure as possible, passing down the entire state of the store in a single object also has the effect of reducing the number of props we need to manage.</p>
+
+<p>Occasionally we may need to add additional controller-views deeper in the hierarchy to keep components simple.  This might help us to better encapsulate a section of the hierarchy related to a specific  data domain.  Be aware, however, that controller-views deeper in the hierarchy can violate the singular flow of data by introducing a new, potentially conflicting entry point for the data flow.  In making the decision of whether to add a deep controller-view, balance the gain of simpler components against the complexity of multiple data updates flowing into the hierarchy at different points.  These multiple data updates can lead to odd effects, with React&#39;s render method getting invoked repeatedly by updates from different controller-views, potentially increasing the difficulty of debugging.</p>
+<h3><a class="anchor" name="actions"></a>Actions <a class="hash-link" href="#actions">#</a></h3>
+<p>The dispatcher exposes a method that allows us to trigger a dispatch to the stores, and to include a payload of data, which we call an action. The action&#39;s creation may be wrapped into a semantic helper method which sends the action to the dispatcher. For example, we may want to change the text of a to-do item in a to-do list application. We would create an action with a function signature like <code>updateText(todoId, newText)</code> in our <code>TodoActions</code> module. This method may be invoked from within our views&#39; event handlers, so we can call it in response to a user interaction. This action creator method also adds a <em>type</em> to the action, so that when the action is interpreted in the store, it can respond appropriately. In our example, this type might be named something like <code>TODO_UPDATE_TEXT</code>.</p>
+
+<p>Actions may also come from other places, such as the server. This happens, for example, during data initialization. It may also happen when the server returns an error code or when the server has updates to provide to the application.</p>
+<h3><a class="anchor" name="what-about-that-dispatcher"></a>What About that Dispatcher? <a class="hash-link" href="#what-about-that-dispatcher">#</a></h3>
+<p>As mentioned earlier, the dispatcher is also able to manage dependencies between stores. This functionality is available through the <code>waitFor()</code> method within the Dispatcher class.  We did not need to use this method within the extremely simple <a href="https://github.com/facebook/flux/tree/master/examples/flux-todomvc/">TodoMVC application</a>, but it becomes vital in a larger, more complex application.</p>
+
+<p>Within the TodoStore&#39;s registered callback we could explicitly wait for any dependencies to first update before moving forward:</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="k">case</span> <span class="s1">&#39;TODO_CREATE&#39;</span><span class="o">:</span>
+  <span class="nx">Dispatcher</span><span class="p">.</span><span class="nx">waitFor</span><span class="p">([</span>
+    <span class="nx">PrependedTextStore</span><span class="p">.</span><span class="nx">dispatchToken</span><span class="p">,</span>
+    <span class="nx">YetAnotherStore</span><span class="p">.</span><span class="nx">dispatchToken</span>
+  <span class="p">]);</span>
+
+  <span class="nx">TodoStore</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">PrependedTextStore</span><span class="p">.</span><span class="nx">getText</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nx">action</span><span class="p">.</span><span class="nx">text</span><span class="p">);</span>
+  <span class="k">break</span><span class="p">;</span>
+</code></pre></div>
+<p><code>waitFor()</code> accepts a single argument which is an array of dispatcher registry indexes, often called <em>dispatch tokens</em>. Thus the store that is invoking <code>waitFor()</code> can depend on the state of another store to inform how it should update its own state.</p>
+
+<p>A dispatch token is returned by <code>register()</code> when registering callbacks for the Dispatcher:</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">PrependedTextStore</span><span class="p">.</span><span class="nx">dispatchToken</span> <span class="o">=</span> <span class="nx">Dispatcher</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">payload</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>For more on <code>waitFor()</code>, actions, action creators and the dispatcher, please see <a href="http://facebook.github.io/react/blog/2014/07/30/flux-actions-and-the-dispatcher.html">Flux: Actions and the Dispatcher</a>.</p>
+
+
+    <div class="docs-prevnext">
+      
+      
+        <a class="docs-next" href="/react/docs/todo-list">Next（下一页） &rarr;</a>
+      
+    </div>
+  </div>
+</section>
+
+
+    <footer class="wrap">
+      <div class="left">
+        A Facebook &amp; Instagram collaboration.<br>
+        <a href="/react/acknowledgements.html">Acknowledgements</a>
+      </div>
+      <div class="right">
+        &copy; 2013&ndash;2016 Facebook Inc.<br>
+        Documentation licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+      </div>
+    </footer>
+  </div>
+  <div id="fb-root"></div>
+
+  <script>
+    /* Taakey: google analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-41298772-1', 'facebook.github.io');
+    ga('send', 'pageview');
+    */
+    /* Taakey: twitter widgets
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    */
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=623268441017527";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    docsearch({
+      apiKey: '36221914cce388c46d0420343e0bb32e',
+      indexName: 'react',
+      inputSelector: '#algolia-doc-search'
+    });
+  </script>
+</body>
+</html>

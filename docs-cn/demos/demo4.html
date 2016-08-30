@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo4 - 复合组件</title>
+    <script src="./react-15.3.1/build/react.min.js"></script>
+    <script src="./react-15.3.1/build/react-dom.min.js"></script>
+    <!-- <script src="./react-0.14.8/build/JSXTransformer-0.14.8.js"></script> -->
+    <script src="./browser-5.8.24.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+
+    <script type="text/babel">
+
+      // ** 在这里替换成你的代码 **
+
+      var Avatar = React.createClass({
+		  render: function() {
+			return (
+			  <div>
+				<PagePic pagename={this.props.pagename} />
+				<PageLink pagename={this.props.pagename} />
+			  </div>
+			);
+		  }
+		});
+
+		var PagePic = React.createClass({
+		  render: function() {
+			return (
+			  <img src={'https://graph.facebook.com/' + this.props.pagename + '/picture'} />
+			);
+		  }
+		});
+
+		var PageLink = React.createClass({
+		  render: function() {
+			return (
+			  <a href={'https://www.facebook.com/' + this.props.pagename}>
+				{this.props.pagename}
+			  </a>
+			);
+		  }
+		});
+
+		ReactDOM.render(
+		  <Avatar pagename="Engineering" />,
+		  document.getElementById('example')
+		);
+
+    </script>
+  </body>
+</html>
